@@ -1,0 +1,28 @@
+### Poster Index
+GET http://localhost:3000/posters.json
+
+### Poster Create
+POST http://localhost:3000/posters.json
+Content-Type: application/json
+
+{
+  "venue": "The Gorge",
+  "year": 2008,
+  "description": "Heaven's Amphitheatre"
+}
+
+### Poster Show
+GET http://localhost:3000/posters/2.json
+
+### Poster Update
+PATCH http://localhost:3000/posters/4.json
+Content-Type: application/json
+
+{
+  "venue": "MGM Grand Gardens Arena",
+  "year" : 2010,
+  "description": "Mitchy, Stina, and Beckers"
+}
+
+### Poster Destroy
+DELETE http://localhost:3000/posters/5
